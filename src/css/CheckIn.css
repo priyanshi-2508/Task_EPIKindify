@@ -1,0 +1,47 @@
+.checkin-container {
+    border: 1px solid black;
+    margin-top: 10rem;
+    margin-left: 27rem;
+    margin-right: 27rem;
+    height: 26rem;
+  }
+  
+  .checkin-container h2 {
+    text-align: center;
+  }
+  
+  .row1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .row2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .row1-input {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .row2-input {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .submit button {
+    margin-top: 2rem;
+    margin-left: 23rem;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffb6c1;
+    font-size: 20px;
+    color:#722f37;
+    height: 30px;
+  }
+
+.toPayBox{
+    text-align: center;
+}
+  
