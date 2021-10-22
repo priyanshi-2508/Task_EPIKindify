@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Task_EPIKindify/static/css/main.86a8e41a.chunk.css",
+    "main.js": "/Task_EPIKindify/static/js/main.4df17062.chunk.js",
+    "main.js.map": "/Task_EPIKindify/static/js/main.4df17062.chunk.js.map",
+    "runtime-main.js": "/Task_EPIKindify/static/js/runtime-main.22fb4838.js",
+    "runtime-main.js.map": "/Task_EPIKindify/static/js/runtime-main.22fb4838.js.map",
+    "static/js/2.e5e2ff86.chunk.js": "/Task_EPIKindify/static/js/2.e5e2ff86.chunk.js",
+    "static/js/2.e5e2ff86.chunk.js.map": "/Task_EPIKindify/static/js/2.e5e2ff86.chunk.js.map",
+    "static/js/3.09b49af8.chunk.js": "/Task_EPIKindify/static/js/3.09b49af8.chunk.js",
+    "static/js/3.09b49af8.chunk.js.map": "/Task_EPIKindify/static/js/3.09b49af8.chunk.js.map",
+    "index.html": "/Task_EPIKindify/index.html",
+    "static/css/main.86a8e41a.chunk.css.map": "/Task_EPIKindify/static/css/main.86a8e41a.chunk.css.map",
+    "static/js/2.e5e2ff86.chunk.js.LICENSE.txt": "/Task_EPIKindify/static/js/2.e5e2ff86.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22fb4838.js",
+    "static/js/2.e5e2ff86.chunk.js",
+    "static/css/main.86a8e41a.chunk.css",
+    "static/js/main.4df17062.chunk.js"
+  ]
+}
