@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import "../css/CheckIn.css";
+import "../css/CheckInAndCheckOut.css";
 
-export default class CheckOut extends Component {
+
+export default class CheckOutPage extends Component {
 
     state = {
         newobj: []
@@ -38,9 +39,7 @@ export default class CheckOut extends Component {
                 <h2>Vechile Check-in</h2>
                 <div className="row1">
                     <h5>Vehicle Number</h5>
-
                     <h5>Vehicle Type</h5>
-
                     <h5>Vehicle Model</h5>
 
                 </div>
@@ -69,10 +68,6 @@ export default class CheckOut extends Component {
                     <button onClick={() => this.deleteVehicle(this.newobj.id)}>Proceed To Pay</button>
                 </div>
             </div>
-
-           
-
-
         )
     }
 }

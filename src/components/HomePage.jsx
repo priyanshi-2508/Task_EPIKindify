@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
-import ValetList from './ValetList';
-// import { Redirect } from "react-router-dom";
-// import { useHistory } from 'react-router-dom';
+import ParkingList from './ParkingList';
 import '../css/HomePage.css';
 
 
@@ -10,14 +8,6 @@ export default class HomePage extends Component {
     state = {
         valetList: []
     }
-    // deleteVehicle = (id) => {
-    //     // current - rest of the task 
-    //     let filteredList = this.state.valetList.filter(function (vehicle) { return vehicle.id !== id; })
-    //     this.setState({
-    //         valetList: filteredList
-    //     });
-    //     localStorage.setItem('vehicleList', JSON.stringify(filteredList))
-    // }
     addVehicle = (obj) => {
         let tempArr = []
         var localList = JSON.parse(localStorage.getItem('vehicleList'))
@@ -28,7 +18,7 @@ export default class HomePage extends Component {
         else {
             tempArr = [obj]
         }
-        console.log("aa", tempArr);
+        // console.log("aa", tempArr);
         tempArr != null && localStorage.setItem('vehicleList', JSON.stringify(tempArr))
         this.setState({
             valetList: tempArr
@@ -38,20 +28,19 @@ export default class HomePage extends Component {
     // this.props.location.state
 
     onCheckIn = () => {
-        console.log("Done");
+        // console.log("Done");
         const { history } = this.props;
-        console.log("H", history)
+        // console.log("History output", history)
         if (history) history.push({
-            pathname: '/CheckIn'
-
+            pathname: '/CheckInPage'
         });
     }
     componentDidMount() {
-        console.log("lcalData", JSON.parse(localStorage.getItem('tempData')))
-        JSON.parse(localStorage.getItem('tempData')) != null && this.addVehicle(JSON.parse(localStorage.getItem('tempData')));
-        console.log("new", this.state.valetList)
+        // console.log("lcalData", JSON.parse(localStorage.getItem('tempData')))
+        JSON.parse(localStorage.getItem('tempData')) != null && this.addVehicle(JSON.parse(localStorage.getItem('tempData'))); //calling addVehicle function..
+        // console.log("new", this.state.valetList)
         localStorage.removeItem('tempData')
-        console.log("hiii")
+        // console.log("hiii")
     }
     componentWillMount() {
         this.state.valetList = JSON.parse(localStorage.getItem('vehicleList'))
@@ -67,11 +56,11 @@ export default class HomePage extends Component {
                     <button className="signoutbtn"><i class="fa fa-signout">&#xf011;</i>SignOut</button>
                 </div>
                 <div className="div2">
-                    <input className="search_bar" type="text" placeholder="search your vehicle number here" />
+                    <input className="search_bar" type="text" placeholder="search vehicle number" />
                     <button className="checkin" onClick={this.onCheckIn}><i class="fa fa-plus" aria-hidden="true"></i>CheckIn</button>
                 </div>
                 <hr></hr>
-                <ValetList list={this.state.valetList}> </ValetList>
+                <ParkingList list={this.state.valetList}> </ParkingList>
             </div>
         )
     }

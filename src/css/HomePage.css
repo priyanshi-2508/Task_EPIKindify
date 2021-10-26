@@ -5,23 +5,21 @@
 
 .heading{
     margin-top: 30px;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:cursive;
     font-size: 40px;
+    color:#804148;
 }
 .signoutbtn{
     margin-top:15px;
     margin-right:60px;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #ffb6c1;
+    background-color: #100103;
     font-size: 20px;
-    color:#722f37;
+    color:#d88d96;
     height: 30px;
 }
 .fa-signout{
     font-size: 20px;
-    color:#722f37;
+    color:#d88d96;
 }
 .div2{
     display: flex;
@@ -30,18 +28,15 @@
 .search_bar{
     margin-right: 2rem;
     border-radius: 20px;
-    font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 14px;
     width:25rem;
     padding: 0.5rem;
 }
-.checkin{
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #ffb6c1;
+.checkin{ 
+    background-color: #3f1c21;
     font-size: 20px;
-    color:#722f37;
+    color:#d88d96;
     height: 30px;
     padding:0.3rem;
 }

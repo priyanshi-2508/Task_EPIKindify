@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../css/CheckIn.css';
+import "../css/CheckInAndCheckOut.css";
 
-export default class CheckIn extends Component {
+export default class CheckInPage extends Component {
     state = {
         vnum: "",
         vtype: "",
@@ -59,7 +59,7 @@ export default class CheckIn extends Component {
         }
         console.log("CheckIn Done");
         // console.log(obj);
-        localStorage.setItem('tempData', JSON.stringify(obj))
+        localStorage.setItem('tempData', JSON.stringify(obj));
 
         const { history } = this.props;
 
@@ -86,11 +86,9 @@ export default class CheckIn extends Component {
             <div className="checkin-container">
                 <h2>Vechile Check-in</h2>
                 <div className="row1">
-                    <h5>Vehicle Number</h5>
-
-                    <h5>Vehicle Type</h5>
-
-                    <h5>Vehicle Model</h5>
+                    <h4>Vehicle Number</h4>
+                    <h4>Vehicle Type</h4>
+                    <h4>Vehicle Model</h4>
 
                 </div>
 
@@ -106,10 +104,8 @@ export default class CheckIn extends Component {
                         onChange={this.handleCurrDetail} />
                 </div>
                 <div className="row2">
-                    <h5>Phone Number</h5>
-
-                    <h5>Customer Name</h5>
-
+                    <h4>Phone Number</h4>
+                    <h4>Customer Name</h4>
                 </div>
 
                 <div className="row2-input">
